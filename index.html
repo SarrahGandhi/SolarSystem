@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Solar System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Interactive Solar System</h1>
+    </header>
+    <main>
+      <div class="stars-container"></div>
+      <div id="comet-container"></div>
+
+      <div class="solar-system">
+        <div class="sun" onclick="displayInfo('sun')">
+          <span class="tooltip">Sun</span>
+        </div>
+
+        <div class="orbit orbit-1">
+          <div class="planet mercury" onclick="displayInfo('mercury')">
+            <div class="tooltip">Mercury</div>
+          </div>
+        </div>
+
+        <div class="orbit orbit-2">
+          <div class="planet venus" onclick="displayInfo('venus')">
+            <div class="tooltip">Venus</div>
+          </div>
+        </div>
+        <div class="orbit orbit-3">
+          <div class="planet earth" onclick="displayInfo('earth')">
+            <div class="tooltip">Earth</div>
+          </div>
+        </div>
+        <div class="orbit orbit-4">
+          <div class="planet mars" onclick="displayInfo('mars')">
+            <div class="tooltip">Mars</div>
+          </div>
+        </div>
+        <div class="orbit orbit-5">
+          <div class="planet jupiter" onclick="displayInfo('jupiter')">
+            <div class="tooltip">Jupiter</div>
+          </div>
+        </div>
+        <div class="orbit orbit-6">
+          <div class="planet saturn" onclick="displayInfo('saturn')">
+            <div class="rings"></div>
+            <div class="tooltip">Saturn</div>
+          </div>
+        </div>
+        <div class="orbit orbit-7">
+          <div class="planet uranus" onclick="displayInfo('uranus')">
+            <div class="tooltip">Uranus</div>
+          </div>
+        </div>
+        <div class="orbit orbit-8">
+          <div class="planet neptune" onclick="displayInfo('neptune')">
+            <div class="tooltip">Neptune</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-panel right-panel">
+        <h2 id="right-title">Solar System</h2>
+        <img
+          id="planet-image"
+          src="images/solarsystem.jpg"
+          alt="Solar System"
+        />
+        <div id="right-text">
+          <p id="right-info">
+            Welcome to the interactive solar system! Click on any planet to
+            learn more about it.
+          </p>
+          <div id="planet-facts" class="fact-box">
+            <h3>Fun Facts</h3>
+            <ul id="facts-list">
+              <li>The solar system has 8 planets.</li>
+              <li>Earth is the only planet known to support life.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Interactive Solar System | Sarrah Gandhi</p>
+    </footer>
+  </body>
+</html>
